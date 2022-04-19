@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Form</title>
+</head>
+<body>
+    <header class="head">
+        <div class="container-head">
+            <h1 id="title">The college</h1>
+            <p id="description">What do you want to do when you go to college?</p>
+        </div>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name"><p>¿What's your name?</p></label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email"><p>¿What's is your email?</p></label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number"><p>¿How old are you?</p></label>
+                <input type="number" name="number" id="number" placeholder="Enter your age" min="1" max="80" required>
+            </div>
+            <div class="form-group">
+                <p>¿What do you want to study?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Chose a option</option>
+                  <option value="medicine">Medicine</option>
+                  <option value="architect">Architect</option>
+                  <option value="engineer">software engineer</option>
+                  <option value="preferNo">Prefer not to say</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                  <p>¿Are you sure about this?</p>
+                  <label for="">
+                      <input  type="radio" class="input-radio" value="yes" name="input-radio"><p>Yes</p>
+                  </label>
+                  <label for="">
+                      <input type="radio" class="input-radio" value="no" name="input-radio"><p>No</p>
+                  </label>
+                  <label for="">
+                      <input type="radio" class="input-radio" value="Yes" name="input-radio"><p>May be</p>
+                  </label>
+              </div>
+              <div class="form-group">
+                  <p>¿Why do you want to study this?
+                      <span class="clue"></span>
+                  </p>
+                  <label for="">
+                      <input type="checkbox" value="money" class="input-checkbox"><p>For money</p>
+                  </label>
+                  <label for="">
+                    <input type="checkbox" value="like" class="input-checkbox"><p>I like that</p>
+                </label>
+                <label for="">
+                    <input type="checkbox" value="parent" class="input-checkbox"><p>For my parents</p>
+                </label>
+                <label for="">
+                    <input type="checkbox" value="I-dont-know" class="input-checkbox"><p>I don't know</p>
+                </label>
+              </div>
+              <div  class="form-group">
+                  <p>¿Any comments or suggestions about this form?</p>
+                  <textarea name="comment" id="comments"  placeholder="Enter your comment here..."></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+              </div>
+        </form>
+    </main>
+    
+
+
+</body>
+</html>
